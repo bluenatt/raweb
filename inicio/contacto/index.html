@@ -6,7 +6,7 @@
 <head>
   <meta charset='utf-8'>
   <meta content='initial-scale=1.0' name='viewport'>
-  <title>Contactenos</title>
+  <title>Contacto</title>
   <link href="../../css/application.css" media="screen" rel="stylesheet" type="text/css" />
   <link href='favicon.ico' rel='shortcut icon'>
   <link href='touch-icon-iphone.png' rel='apple-touch-icon'>
@@ -40,13 +40,13 @@
   </header>
   <div class='breadcrumb'>
     <a href='#'>Inicio</a>
-    <h1>current_page.data.title</h1>
+    <h1>Contacto</h1>
   </div>
   <div class='container'>
     <div id='main-content' role='main'>
       <section role='main'>
         <h1 id='contact-desc'>Cont&aacute;ctanos</h1>
-        <form action='' id='contact-form' method='post' role='form'>
+        <form action='#' id='contact-form' method='post' role='form'>
           <fieldset>
             <legend>&iquest;Cu&aacute;l es tu inquietud?</legend>
             <div class='field'>
@@ -91,7 +91,7 @@
         </form>
       </section>
       <aside>
-        <section class='hcard' itemtype='http://microformats.org/profile/hcard'>
+        <section class='hcard' itemscope itemtype='http://microformats.org/profile/hcard'>
           <div class='org' itemprop='org'>
             redACTIVOS
             <a class='email' href='mailto:redactivos@lausina.org' itemprop='email'>
@@ -112,7 +112,7 @@
           </div>
         </section>
         <section aria-labelledby='donate-desc' class='donate'>
-          <form action='' aria-labelledby='donate-desc' id='donate-form' method='post' role='form'></form>
+          <form action='#' aria-labelledby='donate-desc' id='donate-form' method='post' role='form'></form>
           <fieldset>
             <legend id='donate-desc'>&iquest;Quieres hacer una donaci&oacute;n?</legend>
             <div class='field'>
@@ -121,7 +121,7 @@
             </div>
             <div class='field'>
               <label for='donate-email'>Email:</label>
-              <input id='donate-email' name='email' placeholder='juan@msn.com' type='email' value=''>
+              <input id='donate-email' name='donate-email' placeholder='juan@msn.com' type='email' value=''>
             </div>
             <div class='field'>
               <button type='submit'>Pagar con MercadoPago</button>
