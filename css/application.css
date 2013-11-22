@@ -395,12 +395,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 body {
   min-width: 60em; }
 
-
 .container, .breadcrumb {
+  *zoom: 1;
   width: 63.75em;
   padding-left: 0.625em;
   padding-right: 0.625em;
@@ -409,16 +408,13 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-
   .container:after, .breadcrumb:after {
     content: "";
     display: table;
     clear: both; }
 
-
 header, #main-content, footer {
   width: 100%; }
-
 
 section {
   -webkit-box-sizing: border-box;
@@ -434,14 +430,12 @@ section {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html,
 button,
 input,
 select,
 textarea {
   color: #222; }
-
 
 html {
   font-size: 1em;
@@ -452,17 +446,22 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+::-moz-selection {
+  background: #df2f2f;
+  text-shadow: none; }
+
+::selection {
+  background: #df2f2f;
+  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
  */
-
 hr {
   display: block;
   height: 1px;
@@ -475,7 +474,6 @@ hr {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-
 audio,
 canvas,
 img,
@@ -486,7 +484,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-
 fieldset {
   border: 0;
   margin: 0;
@@ -495,7 +492,6 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-
 textarea {
   resize: vertical; }
 
@@ -507,7 +503,6 @@ textarea {
    ------------------------------------------------------------------------  */
 /* General
    ------------------------------------------------------------------------ */
-
 body {
   background: #f6f5f2;
   font-family: Arial, Helvetica, sans-serif;
@@ -517,16 +512,13 @@ body {
 
 /* Header
    ------------------------------------------------------------------------ */
-
 .top-bar {
   background-color: #f5f5f1;
   border-bottom: 1px solid #d1d1d1; }
-
   .top-bar ul {
     list-style: none;
     margin: 0 auto;
     padding: .5em 0; }
-
   .top-bar li {
     display: inline-block;
     margin: 0 1em; }
@@ -539,12 +531,10 @@ body {
   width: 139px;
   height: 106px; }
 
-
 .slogan {
   display: inline-block;
   margin: 0 1.25em;
   width: 41.5em; }
-
 
 .sub-slogan {
   display: block; }
@@ -557,14 +547,18 @@ body {
   height: 51px; }
 
 /* header navigation */
-
 header {
   background: white;
   margin: 0 auto 1.25em; }
-
   header nav {
     text-align: right; }
-
+    header nav ul {
+      list-style: none;
+      margin: 0 auto;
+      padding: .5em 0; }
+    header nav li {
+      display: inline-block;
+      margin: 0 1em; }
 
 .home section {
   background-color: white;
@@ -573,37 +567,30 @@ header {
   margin: 0 auto 1.25em;
   padding: 0.625em; }
 
-
 .main-links {
   width: 100%; }
-
   .main-links .products,
   .main-links .services {
     display: inline-block;
     width: 15em; }
-
   .main-links .services {
     float: right; }
-
 
 .featured {
   display: inline-block;
   width: 30.5em; }
-
   .featured img {
     display: inline;
     float: left; }
-      .featured.last {
+  .featured.last {
     margin-left: 1.2em; }
 
 .clients {
   width: 100%; }
-
   .clients .client-list {
     list-style: none;
     margin: 0 auto;
     padding: 0.625em; }
-
   .clients li {
     display: inline-block;
     margin: 0 .625em; }
@@ -611,18 +598,15 @@ header {
 .work {
   width: 45em; }
 
-
 .contact {
   width: 15em; }
 
 /* sections */
-
 section, aside, article {
   background-color: white;
   color: black;
   margin: 0 auto 1.25em;
   padding: 1.25em; }
-
 
 .breadcrumb h1 {
   display: inline-block;
@@ -630,20 +614,17 @@ section, aside, article {
   margin: 0; }
 
 /* services */
-
 .services aside, .service aside {
   display: inline-block;
   float: left;
   margin: 0 1.25em 0 0;
   width: 15em; }
-
   .services aside dd, .service aside dd {
     margin: 0; }
 
 .services .service-list {
   display: inline-block;
   width: 46em; }
-
   .services .service-list article {
     border: 1px solid #555;
     display: inline-block;
@@ -651,55 +632,44 @@ section, aside, article {
     padding: 1em;
     vertical-align: top;
     width: 47%; }
-
     .services .service-list article section {
       padding: 0;
       margin: 0;
       font-size: 0.9em; }
-
     .services .service-list article dl {
       display: inline-block;
       vertical-align: top;
       width: 32%; }
-
     .services .service-list article dd {
       margin: 0 0 0 .5em; }
-
 
 .service article {
   display: inline-block;
   width: 46em; }
 
 /* contact-us */
-
 .contact-us .main {
   display: inline-block;
   width: 45em; }
-
   .contact-us .main .field {
     width: 75%; }
-
 .contact-us aside {
   display: inline-block;
   float: right;
   width: 17em; }
-
 .contact-us .field {
   display: block;
   margin: 0 auto .25em;
   padding: 0.25em; }
-
 .contact-us input[type='text'],
 .contact-us input[type='email'],
 .contact-us textarea {
   width: 100%; }
 
 /* footer */
-
 footer .link-list {
   margin: 0 auto;
   padding: 0; }
-
   footer .link-list > li {
     display: inline-table;
     width: 15em; }
@@ -710,7 +680,6 @@ footer .link-list {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
-
 .hidden {
   display: none !important;
   visibility: hidden; }
@@ -718,7 +687,6 @@ footer .link-list {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
-
 .visually-hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -733,7 +701,6 @@ footer .link-list {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-
 .visually-hidden.focusable:active,
 .visually-hidden.focusable:focus {
   clip: auto;
@@ -746,7 +713,6 @@ footer .link-list {
 /*
  * Hide visually and from screenreaders, but maintain layout
  */
-
 .invisible {
   visibility: hidden; }
 
@@ -761,14 +727,12 @@ footer .link-list {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-
 .clearfix:before,
 .clearfix:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
-
 
 .clearfix:after {
   clear: both; }
