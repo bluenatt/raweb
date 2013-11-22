@@ -24,15 +24,14 @@
         <li>
           <a accesskey='3' href='/raweb/declaracion-de-accesibilidad/' title='Ir a la declaración de accesibilidad (Atajo de teclado: 3)'>Declaración de accesibilidad</a>
         </li>
-        <li>
-          <a accesskey='4' href='/raweb/ayuda/' rel='help' title='Ir a ayuda y preguntas frecuentes (Atajo de teclado: 4)'>Ayuda</a>
-        </li>
       </ul>
     </div>
     <div class='container'>
       <a class='logo' href='/raweb/' title='Volver a la página principal'>redACTIVOS</a>
-      <p class='slogan'>Producción inclusiva, clientes responsables</p>
-      <p class='sub-slogan'>Producción responsable, clientes inclusivos</p>
+      <p class='slogan'>
+        Producción inclusiva, clientes responsables
+        <span class='sub-slogan'>Producci&oacute;n responsable, clientes inclusivos</span>
+      </p>
       <a class='usina' href='http://www.lausina.org/' target='_blank' title='Sitio web de La Usina'>Una iniciativa de La Usina</a>
       <nav role='navigation'>
         <a href='/raweb/quienes-somos/' title='Sección acerca de redACTIVOS'>¿Qui&eacute;nes somos?</a>
@@ -44,6 +43,7 @@
   <main id='main-content' role='main'>
     <div class='breadcrumb'>
       <a href='#'>Inicio</a>
+      <span>></span>
       <h1>Servicios</h1>
     </div>
     <div class='container'>
@@ -73,8 +73,8 @@
                 <label for='checkprod5'>Juegos de mesa</label>
               </li>
               <li>
-                <label for='checkprod6'>Marroquinería</label>
                 <input id='checkprod6' name='prod-marroquineria' type='checkbox'>
+                <label for='checkprod6'>Marroquinería</label>
               </li>
               <li>
                 <input id='checkprod7' name='prod-ropa' type='checkbox'>
@@ -199,40 +199,45 @@
           </dd>
         </dl>
       </aside>
-      <section role='region'>
+      <section class='service-list' role='region'>
         <article aria-labelledby='prod-1-desc'>
           <a href='/raweb/servicio/' title='ficha descriptiva del producto'>
             <img alt='ecobolsas de friselina' height='130' src='/raweb/img/productos_1.png' width='130'>
             <span>Productos</span>
             <h2 id='prod-1-desc'>Ecobolsas</h2>
           </a>
-          <h3>Cómo realizamos este producto</h3>
-          <dl>
-            <dt>Materiales</dt>
-            <dd>Lienzo</dd>
-            <dd>Lona</dd>
-            <dd>Friselina</dd>
-            <dt>Habilidades</dt>
-            <dd>Cortado</dd>
-            <dd>costura</dd>
-            <dd>ensamblado</dd>
-            <dt>Tecnologías</dt>
-            <dd>Serigrafía</dd>
-            <dd>Cosido</dd>
-            <dd>Cortado</dd>
-          </dl>
-          <h3>Ya compraron este producto</h3>
-          <ul>
-            <li>
-              <img alt='Walmart' height='40' src='/raweb/img/prod-cliente-1.png' width='94'>
-            </li>
-            <li>
-              <img alt='Unilever' height='40' src='/raweb/img/prod-cliente-2.png' width='36'>
-            </li>
-            <li>
-              <img alt='RapiPago' height='40' src='/raweb/img/prod-cliente-3.png' width='62'>
-            </li>
-          </ul>
+          <section>
+            <h3>Cómo realizamos este producto</h3>
+            <dl>
+              <dt>Materiales</dt>
+              <dd>Lienzo</dd>
+              <dd>Lona</dd>
+            </dl>
+            <dl>
+              <dt>Habilidades</dt>
+              <dd>Cortado</dd>
+              <dd>Costura</dd>
+            </dl>
+            <dl>
+              <dt>Tecnologías</dt>
+              <dd>Serigrafía</dd>
+              <dd>Cosido</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Ya compraron este producto</h3>
+            <ul>
+              <li>
+                <img alt='Walmart' height='40' src='/raweb/img/prod-cliente-1.png' width='94'>
+              </li>
+              <li>
+                <img alt='Unilever' height='40' src='/raweb/img/prod-cliente-2.png' width='36'>
+              </li>
+              <li>
+                <img alt='RapiPago' height='40' src='/raweb/img/prod-cliente-3.png' width='62'>
+              </li>
+            </ul>
+          </section>
         </article>
         <article aria-labelledby='prod-2-desc'>
           <a href='/raweb/servicio/' title='Ficha descriptiva del producto'>
@@ -240,33 +245,271 @@
             <span>Productos</span>
             <h2 id='prod-2-desc'>Cajas</h2>
           </a>
-          <h3>Cómo realizamos este producto</h3>
-          <dl>
-            <dt>Materiales</dt>
-            <dd>Lienzo</dd>
-            <dd>Lona</dd>
-            <dd>Friselina</dd>
-            <dt>Habilidades</dt>
-            <dd>Cortado</dd>
-            <dd>costura</dd>
-            <dd>ensamblado</dd>
-            <dt>Tecnologías</dt>
-            <dd>Serigrafía</dd>
-            <dd>Cosido</dd>
-            <dd>Cortado</dd>
-          </dl>
-          <h3>Ya compraron este producto</h3>
-          <ul>
-            <li>
-              <img alt='Walmart' height='40' src='/raweb/img/prod-cliente-1.png' width='94'>
-            </li>
-            <li>
-              <img alt='Unilever' height='40' src='/raweb/img/prod-cliente-2.png' width='36'>
-            </li>
-            <li>
-              <img alt='RapiPago' height='40' src='/raweb/img/prod-cliente-3.png' width='62'>
-            </li>
-          </ul>
+          <section>
+            <h3>Cómo realizamos este producto</h3>
+            <dl>
+              <dt>Materiales</dt>
+              <dd>Lienzo</dd>
+              <dd>Lona</dd>
+            </dl>
+            <dl>
+              <dt>Habilidades</dt>
+              <dd>Cortado</dd>
+              <dd>Costura</dd>
+            </dl>
+            <dl>
+              <dt>Tecnologías</dt>
+              <dd>Serigrafía</dd>
+              <dd>Cosido</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Ya compraron este producto</h3>
+            <ul>
+              <li>
+                <img alt='Walmart' height='40' src='/raweb/img/prod-cliente-1.png' width='94'>
+              </li>
+              <li>
+                <img alt='Unilever' height='40' src='/raweb/img/prod-cliente-2.png' width='36'>
+              </li>
+              <li>
+                <img alt='RapiPago' height='40' src='/raweb/img/prod-cliente-3.png' width='62'>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article aria-labelledby='prod-3-desc'>
+          <a href='/raweb/servicio/' title='ficha descriptiva del material'>
+            <img alt='lona' height='130' src='/raweb/img/materiales_1.png' width='130'>
+            <span>Material</span>
+            <h2 id='prod-3-desc'>Lona</h2>
+          </a>
+          <section>
+            <h3>Cómo trabajamos con este material</h3>
+            <dl>
+              <dt>Productos</dt>
+              <dd>Ecobolsas</dd>
+            </dl>
+            <dl>
+              <dt>Habilidades</dt>
+              <dd>Cortado</dd>
+              <dd>Costura</dd>
+            </dl>
+            <dl>
+              <dt>Tecnologías</dt>
+              <dd>Serigrafía</dd>
+              <dd>Cosido</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Ya compraron este producto</h3>
+            <ul>
+              <li>
+                <img alt='Walmart' height='40' src='/raweb/img/prod-cliente-1.png' width='94'>
+              </li>
+              <li>
+                <img alt='Unilever' height='40' src='/raweb/img/prod-cliente-2.png' width='36'>
+              </li>
+              <li>
+                <img alt='RapiPago' height='40' src='/raweb/img/prod-cliente-3.png' width='62'>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article aria-labelledby='prod-4-desc'>
+          <a href='/raweb/servicio/' title='ficha descriptiva del material'>
+            <img alt='carton' height='130' src='/raweb/img/materiales_2.png' width='130'>
+            <span>Material</span>
+            <h2 id='prod-4-desc'>Cartón</h2>
+          </a>
+          <section>
+            <h3>Cómo trabajamos con este material</h3>
+            <dl>
+              <dt>Productos</dt>
+              <dd>Cajas</dd>
+              <dd>Juegos</dd>
+            </dl>
+            <dl>
+              <dt>Habilidades</dt>
+              <dd>Etiquetado</dd>
+              <dd>Armado</dd>
+            </dl>
+            <dl>
+              <dt>Tecnologías</dt>
+              <dd>Serigrafía</dd>
+              <dd>Troquelado</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Ya compraron este producto</h3>
+            <ul>
+              <li>
+                <img alt='Walmart' height='40' src='/raweb/img/prod-cliente-1.png' width='94'>
+              </li>
+              <li>
+                <img alt='Unilever' height='40' src='/raweb/img/prod-cliente-2.png' width='36'>
+              </li>
+              <li>
+                <img alt='RapiPago' height='40' src='/raweb/img/prod-cliente-3.png' width='62'>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article aria-labelledby='prod-5-desc'>
+          <a href='/raweb/servicio/' title='ficha descriptiva de la tecnologia'>
+            <img alt='serigrafia' height='130' src='/raweb/img/tecnologia_1.png' width='130'>
+            <span>Tecnología</span>
+            <h2 id='prod-5-desc'>Serigrafía</h2>
+          </a>
+          <section>
+            <h3>Cómo trabajamos con esta tecnología</h3>
+            <dl>
+              <dt>Productos</dt>
+              <dd>Ecobolsas</dd>
+              <dd>Bolsas</dd>
+            </dl>
+            <dl>
+              <dt>Habilidades</dt>
+              <dd>Etiquetado</dd>
+              <dd>Armado</dd>
+            </dl>
+            <dl>
+              <dt>Materiales</dt>
+              <dd>Lona</dd>
+              <dd>Lienzo</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Ya compraron este producto</h3>
+            <ul>
+              <li>
+                <img alt='Walmart' height='40' src='/raweb/img/prod-cliente-1.png' width='94'>
+              </li>
+              <li>
+                <img alt='Unilever' height='40' src='/raweb/img/prod-cliente-2.png' width='36'>
+              </li>
+              <li>
+                <img alt='RapiPago' height='40' src='/raweb/img/prod-cliente-3.png' width='62'>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article aria-labelledby='prod-6-desc'>
+          <a href='/raweb/servicio/' title='ficha descriptiva de la tecnologia'>
+            <img alt='troquelado' height='130' src='/raweb/img/tecnologia_2.png' width='130'>
+            <span>Tecnología</span>
+            <h2 id='prod-6-desc'>Troquelado</h2>
+          </a>
+          <section>
+            <h3>Cómo trabajamos con esta tecnología</h3>
+            <dl>
+              <dt>Productos</dt>
+              <dd>Cajas</dd>
+              <dd>Artesanías</dd>
+            </dl>
+            <dl>
+              <dt>Habilidades</dt>
+              <dd>Etiquetado</dd>
+              <dd>Armado</dd>
+            </dl>
+            <dl>
+              <dt>Materiales</dt>
+              <dd>Cuero</dd>
+              <dd>Papel</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Ya compraron este producto</h3>
+            <ul>
+              <li>
+                <img alt='Walmart' height='40' src='/raweb/img/prod-cliente-1.png' width='94'>
+              </li>
+              <li>
+                <img alt='Unilever' height='40' src='/raweb/img/prod-cliente-2.png' width='36'>
+              </li>
+              <li>
+                <img alt='RapiPago' height='40' src='/raweb/img/prod-cliente-3.png' width='62'>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article aria-labelledby='prod-7-desc'>
+          <a href='/raweb/servicio/' title='ficha descriptiva de la habilidad'>
+            <img alt='costura' height='130' src='/raweb/img/habilidad_1.png' width='130'>
+            <span>Habilidad</span>
+            <h2 id='prod-7-desc'>Costura</h2>
+          </a>
+          <section>
+            <h3>Que hacemos con esta habilidad</h3>
+            <dl>
+              <dt>Productos</dt>
+              <dd>Ecobolsas</dd>
+              <dd>Artesanías</dd>
+            </dl>
+            <dl>
+              <dt>Tecnologías</dt>
+              <dd>Serigrafía</dd>
+              <dd>Cortado</dd>
+            </dl>
+            <dl>
+              <dt>Materiales</dt>
+              <dd>Cuero</dd>
+              <dd>Algodón</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Ya compraron este producto</h3>
+            <ul>
+              <li>
+                <img alt='Walmart' height='40' src='/raweb/img/prod-cliente-1.png' width='94'>
+              </li>
+              <li>
+                <img alt='Unilever' height='40' src='/raweb/img/prod-cliente-2.png' width='36'>
+              </li>
+              <li>
+                <img alt='RapiPago' height='40' src='/raweb/img/prod-cliente-3.png' width='62'>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article aria-labelledby='prod-8-desc'>
+          <a href='/raweb/servicio/' title='ficha descriptiva de la habilidad'>
+            <img alt='ensamblado' height='130' src='/raweb/img/habilidad_2.png' width='130'>
+            <span>Habilidad</span>
+            <h2 id='prod-8-desc'>Ensamblado</h2>
+          </a>
+          <section>
+            <h3>Que hacemos con esta habilidad</h3>
+            <dl>
+              <dt>Productos</dt>
+              <dd>Cajas</dd>
+              <dd>Ecobolsas</dd>
+            </dl>
+            <dl>
+              <dt>Tecnologías</dt>
+              <dd>Serigrafía</dd>
+              <dd>Cortado</dd>
+            </dl>
+            <dl>
+              <dt>Materiales</dt>
+              <dd>Cartón</dd>
+              <dd>Lienzo</dd>
+            </dl>
+          </section>
+          <section>
+            <h3>Ya compraron este producto</h3>
+            <ul>
+              <li>
+                <img alt='Walmart' height='40' src='/raweb/img/prod-cliente-1.png' width='94'>
+              </li>
+              <li>
+                <img alt='Unilever' height='40' src='/raweb/img/prod-cliente-2.png' width='36'>
+              </li>
+              <li>
+                <img alt='RapiPago' height='40' src='/raweb/img/prod-cliente-3.png' width='62'>
+              </li>
+            </ul>
+          </section>
         </article>
       </section>
     </div>
@@ -289,7 +532,7 @@
       </div>
     </div>
     <div class='container'>
-      <ul>
+      <ul class='link-list'>
         <li>
           <a href='/raweb/quienes-somos/' title='Sección acerca de redACTIVOS'>¿Quiénes somos?</a>
           <ul class='who'>
@@ -346,9 +589,6 @@
             </li>
             <li>
               <a href='/raweb/declaracion-de-accesibilidad/'>Declaración de accesibilidad</a>
-            </li>
-            <li>
-              <a href='/raweb/ayuda/' rel='help'>Ayuda</a>
             </li>
           </ul>
         </li>

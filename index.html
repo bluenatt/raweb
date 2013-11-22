@@ -30,9 +30,11 @@
       </ul>
     </div>
     <div class='container'>
-      <h1>redACTIVOS</h1>
-      <p class='slogan'>Producción inclusiva, clientes responsables</p>
-      <p class='sub-slogan'>Producci&oacute;n responsable, clientes inclusivos</p>
+      <h1 class='logo'>redACTIVOS</h1>
+      <p class='slogan'>
+        Producción inclusiva, clientes responsables
+        <span class='sub-slogan'>Producci&oacute;n responsable, clientes inclusivos</span>
+      </p>
       <a class='usina' href='http://www.lausina.org/' target='_blank' title='Sitio web de La Usina'>Una iniciativa de La Usina</a>
       <nav role='navigation'>
         <a href='/raweb/quienes-somos/' title='Sección acerca de redACTIVOS'>¿Qui&eacute;nes somos?</a>
@@ -44,14 +46,14 @@
   <main id='main-content' role='main'>
     <div class='container'>
       <section class='main-links'>
-        <a href='servicios/' title='Ver más info sobre los productos que desarrollamos'>
+        <a class='products' href='servicios/' title='Ver más info sobre los productos que desarrollamos'>
           <span class='title'>
             Productos
             <span>que desarrollamos</span>
           </span>
           <p>Agrupamos a m&aacute;s de 600 trabajadores con discapacidad que tercerizan procesos y fabrican productos de calidad a escala cumpliendo normas de calidad y plazos de entrega del mercado.</p>
         </a>
-        <ul>
+        <ul class='services'>
           <li>
             <a href='/raweb/servicios/' title='Más información sobre los materiales con los que trabajamos'>
               <strong>Materiales</strong>
@@ -72,15 +74,15 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Variedad y Volúmen</h2>
-        <p>Rasti confió en redACTIVOS para el encastre de sus piezas en tiempo récord</p>
+      <section aria-labelledby='featured1' class='featured'>
         <img alt='Conjunto de cajas y bolsas' height='120' src='/raweb/img/home_2variedad.png' width='154'>
+        <h2 id='featured1'>Variedad y Volúmen</h2>
+        <p>Rasti confió en redACTIVOS para el encastre de sus piezas en tiempo récord</p>
       </section>
-      <section class='featured'>
-        <h2>Navidad 2013</h2>
-        <p>Fabricación, armado y paletizado de más de 40.000 cajas.</p>
+      <section aria-labelledby='featured2' class='featured last'>
         <img alt='Productos navideños' height='119' src='/raweb/img/home_2navidad.png' width='141'>
+        <h2 id='featured2'>Navidad 2013</h2>
+        <p>Fabricación, armado y paletizado de más de 40.000 cajas.</p>
       </section>
       <section class='clients'>
         <h3>Siguen confiando en nosotros:</h3>
@@ -112,9 +114,9 @@
         </ul>
       </section>
       <section class='work'>
+        <img alt='Empleados de redACTIVOS ensamblando en un taller.' height='133' src='/raweb/img/home_4procesos.png' width='244'>
         <h2>¿Cómo trabajamos en redACTIVOS?</h2>
         <p>Somos una red de emprendimientos productivos y trabajamos en conjunto para lograr mejores productos</p>
-        <img alt='Empleados de redACTIVOS ensamblando en un taller.' height='133' src='/raweb/img/home_4procesos.png' width='244'>
       </section>
       <section class='contact'>
         <a href='/raweb/contacto/' title='Ir al formulario de contacto'>
@@ -142,7 +144,7 @@
       </div>
     </div>
     <div class='container'>
-      <ul>
+      <ul class='link-list'>
         <li>
           <a href='/raweb/quienes-somos/' title='Sección acerca de redACTIVOS'>¿Quiénes somos?</a>
           <ul class='who'>
@@ -199,9 +201,6 @@
             </li>
             <li>
               <a href='/raweb/declaracion-de-accesibilidad/'>Declaración de accesibilidad</a>
-            </li>
-            <li>
-              <a href='/raweb/ayuda/' rel='help'>Ayuda</a>
             </li>
           </ul>
         </li>
