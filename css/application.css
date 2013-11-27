@@ -395,22 +395,17 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+/* base grid widths */
 body {
   min-width: 60em; }
 
 .container, .breadcrumb {
   width: 63.75em;
-  padding-left: 0.625em;
-  padding-right: 0.625em;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 0.625em;
+  margin: 0 auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
-  .container:after, .breadcrumb:after {
-    content: "";
-    display: table;
-    clear: both; }
 
 header, #main-content, footer {
   width: 100%; }
@@ -420,6 +415,7 @@ section {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* base grid widths */
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -429,6 +425,12 @@ section {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+/* box model reset for all items */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html,
 button,
 input,
@@ -439,24 +441,6 @@ textarea {
 html {
   font-size: 1em;
   line-height: 1.4; }
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-::-moz-selection {
-  background: #df2f2f;
-  text-shadow: none; }
-
-::selection {
-  background: #df2f2f;
-  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
