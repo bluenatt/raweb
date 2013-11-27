@@ -399,7 +399,6 @@ body {
   min-width: 60em; }
 
 .container, .breadcrumb {
-  *zoom: 1;
   width: 63.75em;
   padding-left: 0.625em;
   padding-right: 0.625em;
